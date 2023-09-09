@@ -31,9 +31,13 @@
 }
 
 .display {
+  padding: 15px;
   background-color: rgb(140, 255, 140);
   height: 70px;
   border-radius: 3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .bigButtons {
@@ -54,8 +58,30 @@
   background-color: red;
 }
 
+.clearBtn:hover {
+  transition: all 0.05s;
+  background-color: rgb(233, 0, 0);
+}
+
+.clearBtn:active {
+  transition: all 0.05s;
+  transform: scale(0.97);
+  background-color: rgb(223, 0, 0);
+}
+
 .deleteBtn {
   background-color: rgb(63, 63, 63);
+}
+
+.deleteBtn:hover{
+  transition: all 0.05s;
+  background-color: rgb(46, 46, 46);
+}
+
+.deleteBtn:active {
+  transition: all 0.05s;
+  transform: scale(0.97);
+  background-color: rgb(39, 39, 39);
 }
 
 .smallButtons {
@@ -84,9 +110,15 @@
   font-size: 18px;
 }
 
-.smallButton:hover, .clearBtn:hover, .deleteBtn:hover, a:hover   {
+.smallButton:hover, a:hover   {
   transition: all 0.05s;
-  scale: 1.03;
+  background-color: rgb(196, 196, 196);
+}
+
+.smallButton:active, a:active {
+  transition: all 0.05s;
+  transform: scale(0.97);
+  background-color: rgb(185, 185, 185);
 }
 
 .footer {
