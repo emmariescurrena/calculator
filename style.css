@@ -40,6 +40,22 @@
   align-items: flex-end;
 }
 
+.prevResult {
+
+}
+
+.arrCount {
+  background-color: transparent;
+  border: none;
+  text-shadow: 0 0 0 #2196f3;
+
+  &:focus {
+    outline: none;
+    text-shadow: 0 0 0 #2196f3;
+  }
+}
+
+
 .bigButtons {
   display: flex;
   height: 50px;

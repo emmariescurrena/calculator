@@ -1,7 +1,7 @@
 // HTML buttons
 
-const arrCount = document.getElementById("arrCount");
-const prevResult = document.getElementById("prevResult");
+const aboveScreen = document.getElementById("aboveScreen");
+const belowScreen = document.getElementById("belowScreen");
 const clearBtn = document.getElementById("clearBtn");
 const deleteBtn = document.getElementById("deleteBtn");
 const plusBtn = document.getElementById("plusBtn");
@@ -11,9 +11,13 @@ const divisionBtn = document.getElementById("divisionBtn");
 const equalBtn = document.getElementById("equalBtn");
 const decimalBtn = document.getElementById("decimalBtn");
 
-// Variables
+// Event listeners
+
+window.addEventListener("keydown", writeScreen());
 
 // Functions
+
+writeScreen;
 
 function calculate(string) {
   let arr = string.split(" ");
